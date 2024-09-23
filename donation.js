@@ -57,3 +57,26 @@ document.getElementById("q-btn").addEventListener('click', function () {
     }
     
 })
+const donationBtn = document.getElementById("donation-btn")
+const historyBtn = document.getElementById("history-btn")
+
+document.getElementById("donation-btn").addEventListener('click', function () {
+    showSectionId('donation')
+    donationBtn.classList.add('bg-btn')
+    historyBtn.classList.remove ('bg-btn')
+})
+
+document.getElementById("history-btn").addEventListener('click', function () {
+    showSectionId('history')
+    historyBtn.classList.add('bg-btn')
+    donationBtn.classList.remove ('bg-btn')
+})
+
+const historyItem = document.createElement("div");
+historyItem.className = "rounded-md border border-1 ";
+
+historyItem.innerHTML = `
+<h4 class="font-bold text-base"> ${qDonate} Taka is Donated for famine-2024 at Feni, Bangladesh</h4>
+<p>Date: ${new Date().toLocaleDateString}</p>
+`
+ document.getElementById("history").appendChild(historyItem)

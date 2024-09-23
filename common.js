@@ -7,3 +7,13 @@ function getHtmlValueById(id) {
     const numberValue = parseFloat (value);
     return numberValue
 }
+
+function showSectionId(id) {
+    document.getElementById("donation").classList.add('hidden')
+    document.getElementById("history").classList.add('hidden' )
+    document.getElementById(id).classList.remove('hidden')
+
+}
+document.getElementById("home-btn").addEventListener('click', function () {
+    window.location.href ='/index.html';
+})

@@ -33,7 +33,7 @@
             }
           </script>
     </head>
-<body>
+<body >
     <nav class="bg-header">
         <div class="flex items-center justify-around pt-4 pb-8 ">
           <button id="home-btn" class="btn bg-btn">Home</button>
@@ -51,29 +51,44 @@
       </nav>
 
 
-    <div class="join join-vertical w-full">
-        <div class="collapse collapse-arrow join-item border-base-300 border">
-          <input type="radio" name="my-accordion-4" checked="checked" />
-          <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-          <div class="collapse-content">
-            <p>hello</p>
-          </div>
+    <div class="w-10/12 mx-auto mt-7">
+        <h1 class="text-xl font-bold py-7">IMPORTANT FAQ</h1>
+        <div class="join join-vertical ">
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" checked="checked" />
+              <div class="collapse-title text-xl font-medium">What is DOM ?</div>
+              <div class="collapse-content">
+                <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">How do you select an input element from the DOM?</div>
+              <div class="collapse-content">
+                <p>The DOM Input select() method selects all the text content of a textarea or an input element that contains the text field. Syntax: element. select()</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">what is event delegation in the context of dom and why it is useful?</div>
+              <div class="collapse-content">
+                <p>Event delegation refers to the process of using event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated. It allows us to attach a single event listener for elements that exist now or in the future</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-xl font-medium">how do you manipulatet an elements attribute and style using the dom?</div>
+                <div class="collapse-content">
+                  <p>Manipulating Element Attributes
+                    The classList object only provide methods to change the class of an element. If you want to change other attributes like id , href , or src , you can use the setAttribute() method. The setAttribute() method accepts two arguments: The name of the attribute to set</p>
+                </div>
+            </div>
         </div>
-        <div class="collapse collapse-arrow join-item border-base-300 border">
-          <input type="radio" name="my-accordion-4" />
-          <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-          <div class="collapse-content">
-            <p>hello</p>
-          </div>
-        </div>
-        <div class="collapse collapse-arrow join-item border-base-300 border">
-          <input type="radio" name="my-accordion-4" />
-          <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-          <div class="collapse-content">
-            <p>hello</p>
-          </div>
-        </div>
-      </div>
+    </div>
+
+     
+    
       <script src="donation.js"></script>
+      <script src="common.js"></script>
 </body>
 </html>
