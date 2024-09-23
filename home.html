@@ -35,23 +35,23 @@
     </head>
 <body >
     <nav class="bg-header">
-        <div class="flex items-center justify-around pt-4 pb-8 ">
-          <button id="home-btn" class="btn bg-btn">Home</button>
+        <div class="flex flex-col md:flex-row  items-center justify-around pt-4 pb-8 ">
+          <button id="home-btn" class="btn bg-btn"><a href="index.html">Home</a></button>
   
-          <div class="flex items-center gap-2">
+          <div class="flex items-center py-4 gap-2">
             <img src="./assets/logo.png" alt="">
-            <h4>Donate Bangladesh</h4>
+            <h4 class="text-base font-bold">Donate Bangladesh</h4>
           </div>
   
           <div class="flex items-center gap-2">
             <img src="./assets/coin.png" alt="">
-            <p>5500 BDT</p>
+            <p><span id="h-total-amoutn" >5555</span> BDT</p>
           </div>
         </div>
       </nav>
 
 
-    <div class="w-10/12 mx-auto mt-7">
+    <div class="w-10/12 mx-auto my-7">
         <h1 class="text-xl font-bold py-7">IMPORTANT FAQ</h1>
         <div class="join join-vertical ">
             <div class="collapse collapse-arrow join-item border-base-300 border">
@@ -85,10 +85,11 @@
             </div>
         </div>
     </div>
-
+      
+  
      
-    
+    <script src="common.js"></script>
       <script src="donation.js"></script>
-      <script src="common.js"></script>
+      
 </body>
 </html>

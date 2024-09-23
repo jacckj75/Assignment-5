@@ -14,6 +14,3 @@ function showSectionId(id) {
     document.getElementById(id).classList.remove('hidden')
 
 }
-document.getElementById("home-btn").addEventListener('click', function () {
-    window.location.href ='/index.html';
-})
