@@ -12,6 +12,10 @@ document.getElementById("noakhali-btn").addEventListener('click', function () {
         document.getElementById("total-amount").innerText = newTotalAmount;
         h.classList.remove('hidden')
         const li = document.createElement('li')
+        li.style.border = "black"
+        li.style.border = "solid"
+        li.style.borderRadius = "12px"
+        li.style.padding = "16px"
         li.innerText = `${nDonate} Taka is Donate for Flood at Noakhali, Bangladesh 
         Date: ${date}`
         document.getElementById("history-container").appendChild(li)
@@ -41,6 +45,10 @@ document.getElementById("feni-btn").addEventListener('click', function () {
         document.getElementById("total-amount").innerText = newTotalAmount ;
        h.classList.remove('hidden')
        const li = document.createElement('li')
+       li.style.border = "black"
+        li.style.border = "solid"
+        li.style.borderRadius = "12px"
+        li.style.padding = "16px"
         li.innerText = `${fDonate} Taka is Donate for Flood Relief in Feni,Bangladesh 
         Date: ${date}`
         document.getElementById("history-container").appendChild(li)
@@ -70,6 +78,10 @@ document.getElementById("q-btn").addEventListener('click', function () {
         document.getElementById("total-amount").innerText = newTotalAmount ;
         h.classList.remove('hidden')
         const li = document.createElement('li')
+        li.style.border = "black"
+        li.style.border = "solid"
+        li.style.borderRadius = "12px"
+        li.style.padding = "16px"
         li.innerText = `${qDonate} Taka is Aid for Injured in the Quota Movement 
         Date: ${date}`
         document.getElementById("history-container").appendChild(li)
