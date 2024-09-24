@@ -10,7 +10,7 @@ function getHtmlValueById(id) {
 
 function showSectionId(id) {
     document.getElementById("donation").classList.add('hidden')
-    document.getElementById("history").classList.add('hidden' )
+    document.getElementById("history-container").classList.add('hidden' )
     document.getElementById(id).classList.remove('hidden')
 
 }
