@@ -4,7 +4,7 @@ document.getElementById("noakhali-btn").addEventListener('click', function () {
     const nTotallDonation = getHtmlValueById ('n-totall-donation');
     const h =  document.getElementById("popup")  
     const date = new Date().toString()
-    if ((!isNaN(parseFloat(nDonate))) && nDonate > 0 && totalAmount >0 ) {
+    if ((!isNaN(parseFloat(nDonate))) && nDonate > 0 && totalAmount > 0 && nDonate < totalAmount ) {
         const nDonateValue = parseFloat(nDonate);
         const newTotalDonation = nDonateValue + nTotallDonation ;
         document.getElementById("n-totall-donation").innerText = newTotalDonation
@@ -37,7 +37,7 @@ document.getElementById("feni-btn").addEventListener('click', function () {
      const fTotallDonation = getHtmlValueById ('f-totall-donation');
      const h =  document.getElementById("popup1")  
      const date = new Date().toString() 
-    if ((!isNaN(parseFloat(fDonate))) && fDonate > 0 && totalAmount >0 ) {
+    if ((!isNaN(parseFloat(fDonate))) && fDonate > 0 && totalAmount > 0 && fDonate < totalAmount ) {
         const fDonateValue = parseFloat(fDonate);
         const newTotalDonation = fDonateValue + fTotallDonation ;
         document.getElementById("f-totall-donation").innerText = newTotalDonation ;
@@ -70,7 +70,7 @@ document.getElementById("q-btn").addEventListener('click', function () {
      const qTotallDonation = getHtmlValueById ('q-totall-donation');
      const h =  document.getElementById("popup2")  
      const date = new Date().toString()
-    if ((!isNaN(parseFloat(qDonate))) && qDonate > 0 && totalAmount >0 ) {
+    if ((!isNaN(parseFloat(qDonate))) && qDonate > 0 && totalAmount > 0 && qDonate < totalAmount  ) {
         const qDonateValue = parseFloat(qDonate);
         const newTotalDonation = qDonateValue + qTotallDonation ;
         document.getElementById("q-totall-donation").innerText = newTotalDonation ;
